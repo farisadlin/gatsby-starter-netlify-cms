@@ -1,21 +1,27 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+// Color Palette
+$primary-color: #7C83FD
+$secondary-color: #96BAFF
+$third-color: #7DEDFF
+$fourth-color: #88FFF7
+
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
-$black: #2b2523
+// $primary: $kaldi-red
+// $primary-invert: $kaldi-red-invert
+// $body-color: #333
+// $black: #2b2523
 
 .navbar .navbar-menu
   box-shadow:none !important
 
 .content .taglist
   list-style: none
-  margin-bottom: 0
+  margin-bottom: 0Y
   margin-left: 0
   margin-right: 1.5rem
   margin-top: 1.5rem
@@ -72,7 +78,7 @@ $black: #2b2523
   margin-top: 0 !important
 
 .navbar-item .icon
-  color: $primary
+  color: $primary-color
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
@@ -114,13 +120,13 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 
 @import "~bulma"
@@ -129,12 +135,12 @@ $menu-label-color: $white-ter
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    flex-basis: 50%
 
 +mobile
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
